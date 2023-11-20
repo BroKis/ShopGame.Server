@@ -12,13 +12,11 @@ namespace GameshopMini.Controllers;
 public class GameApiController : ControllerBase
 {
     private IGameRepository _gameRepository;
-    
     private IMapper _mapper;
 
     public GameApiController(IGameRepository gameRepository,IMapper mapper)
     {
         _gameRepository = gameRepository;
-        
         _mapper = mapper;
     }
 
