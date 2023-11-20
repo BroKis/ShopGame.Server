@@ -16,8 +16,5 @@ public class GameConfiguration:IEntityTypeConfiguration<Game>
         builder.Property(x => x.InStock);
         builder.Property(x => x.Cost);
         builder.HasOne(x => x.Genre).WithOne(x =>x.Games).HasForeignKey<Game>(x => x.GenreId);
-        
-       
-
     }
 }
