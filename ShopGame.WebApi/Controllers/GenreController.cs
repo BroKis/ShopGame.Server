@@ -15,7 +15,6 @@ public class GenreApiController:ControllerBase
     public GenreApiController(IGenreRepository genreRepository,
          IMapper mapper)
     {
-       
         _genreRepository = genreRepository;
         _mapper = mapper;
     }
