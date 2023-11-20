@@ -34,8 +34,6 @@ public class OrderApiController:ControllerBase
         {
             return BadRequest();
         }
-
-      
     }
 
     [HttpGet]
@@ -51,8 +49,6 @@ public class OrderApiController:ControllerBase
         {
             return BadRequest();
         }
-
-      
     }
     [HttpGet("{userId}")]
     public async Task<ActionResult<IEnumerable<OrderDTO>>> GetOrderByUserId(int userId)
@@ -67,7 +63,6 @@ public class OrderApiController:ControllerBase
             }
     
             return NotFound();
-    
         }
         catch (Exception e)
         {
