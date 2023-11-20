@@ -6,6 +6,5 @@ public class Order
     public DateTime OrderTime { get; set; }
     public int GameID { get; set; }
     public virtual Game Game { get; set; }
-    public int UserId { get; set; }
-    
+    public int UserId { get; set; } 
 }
